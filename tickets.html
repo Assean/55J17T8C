@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="bootstrap.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="./logo.png" style="width: 50px; height: auto;">
+        <a class="navbar-brand" href="">Tickets</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="business.html">Business</a>
+            </li>
+            <li class="nav-item  active">
+                <a class="nav-link" href="tickets.html">Tickets</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="d-flex justify-content-center">
+        <form class="Card" action="Tickets.php" method="post" style="width: 500px; border: 2px gray solid;border-radius: 10px;">
+        <div class="card-body">
+        <div class="row">
+        <p class="col">
+            <label for="Firstname">First name</label>
+            <!-- <input type="text" id="name" name="name" required> -->
+            <input type="text" class="form-control" name="Firstname" id="" placeholder="First name">
+        </p>
+        <p>
+            <label for="Lastname">Last	name</label>
+            <input type="text" class="form-control" name="Lastname" id="" id="Lastname" placeholder="Last	name" placeholder="First name">
+        </p>
+        </div>
+        <p>
+            <label for="Phone">Phone</label>
+            <input type="text" class="form-control" id="" id="Phone" name="Phone" placeholder="Phone">
+        </p>
+        <p>
+            <label for="Password">Password</label>
+            <input type="password" class="form-control" id="" id="Password" name="Password" placeholder="Password">
+        </p>
+        <p>
+            <label for="Verification">驗證碼</label>
+            <input type="text" class="form-control" id="verify_image" disabled>
+            <input type="text" class="form-control" id="verify_ans" name="verify_ans" hidden>
+        </p>
+        <p>
+            <label for="Verification">Verification</label>
+            <input type="text" class="form-control" id="Verification" id="" name="Verification" placeholder="Verification">
+        </p>
+        <p class="d-flex justify-content-center">
+            <!-- <input type="reset" class="btn btn-danger" value="Reset"> -->
+            <span onclick="location.reload()" class="btn btn-danger" name="verfiy">Reset</span>
+            <input type="submit" class="btn btn-success" value="Submit">
+        </p>
+       </div>
+    </form>
+</div>
+
+    <footer class="d-flex flex-column justify-content-center align-items-center fixed-bottom pb-2">
+        <div class="d-flex  justify-content-center align-items-center" style="width: 100%;">
+        <img class="img" src="./facebook icon.png" style="border: 3px solid;border-radius: 50px;" alt="">
+        <img class="img" src="./google  icon.png" style="border: 3px solid;border-radius: 50px;"  alt="">
+        <img class="img" src="./ig icon.jpg" style="border: 3px solid;border-radius: 100px;"  alt="">
+        </div>
+        Copyright	&copy;	2024	FIBEX	All	Rights	Reserved
+    </footer>
+</body>
+<script>
+    let verfiy = "";
+    let verfiy_ans = document.getElementById("verify_ans");
+    let verfiy_image = document.getElementById("verify_image");
+    verfiy = String(Math.floor(Math.random()*10))+String(Math.floor(Math.random()*10))+String(Math.floor(Math.random()*10))+String(Math.floor(Math.random()*10))
+    
+    let verfiy_arr = verfiy.split("");
+    let answer = verfiy_arr.sort().join("");
+        console.log(answer);
+    verfiy_image.value = verfiy;
+    verfiy_ans.value = answer;
+</script>
+</html>

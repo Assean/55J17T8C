@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="./jquery.js"></script>
+    <script src="bootstrap.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="./logo.png" style="width: 50px; height: auto;">
+        <a class="navbar-brand" href="">Business</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="business.html">Business</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tickets.html">Tickets</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container d-flex justify-content-between align-items-center mt-3">
+        <div class="card"
+            style="width: 18rem;max-height: 400px;overflow:auto;border: 3px solid rgb(0, 184, 184);background-color: rgb(255, 255, 245);border-radius: 10px;padding: 3px;">
+            <img class="card-img-top" src="./img1.jfif" alt=""
+                style="height: 250px;border: 5px solid rgb(255, 167, 167);">
+            <div class="card-body">
+                <h5 class="card-title">設計1</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            </div> <!-- card-body -->
+        </div> <!--card-->
+        <div class="card"   style="max-height: 400px;overflow: auto;width: 18rem;border: 3px solid rgb(0, 184, 184);background-color: rgb(255, 255, 245);border-radius: 10px;padding: 3px;">
+            <img class="card-img-top" src="./img2.jfif" alt="" style="height: 250px;border: 5px solid rgb(255, 167, 167);">
+            <div class="card-body">
+                <h5 class="card-title">設計2</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            </div>
+            <!-- card-body -->
+        </div> <!--card-->
+        <div class="card"
+            style="max-height: 400px;overflow: auto;width: 18rem;border: 3px solid rgb(0, 184, 184);background-color: rgb(255, 255, 245);border-radius: 10px;padding: 3px;">
+            <img class="card-img-top" src="./img3.jfif" alt=""
+                style="height: 250px;border: 5px solid rgb(255, 167, 167);">
+            <div class="card-body">
+                <h5 class="card-title">設計3</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            </div> <!-- card-body -->
+        </div> <!--card-->
+    </div> <!--contaienr-->
+    <div class="       container d-flex justify-content-between align-items-center mt-3">
+        <div class="card"
+            style="max-height: 400px;overflow: auto;width: 18rem;border: 3px solid rgb(0, 184, 184);background-color: rgb(255, 255, 245);border-radius: 10px;padding: 3px;">
+            <img class="card-img-top" src="./img4.jfif" alt=""
+                style="height: 250px;border: 5px solid rgb(255, 167, 167);">
+            <div class="card-body">
+                <h5 class="card-title">作品1</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button onclick="changeText(this)" style = "max-height: 400px;overflow:auto;" class="btn btn-secondary" data-toggle="collapse" data-target="#intro_1">Read more</button>
+                <div id="intro_1" class="collapse">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </div>
+            </div> <!-- card-body -->
+        </div> <!--card-->
+        <div class="card"
+            style="max-height: 400px;overflow: auto;width: 18rem;border: 3px solid rgb(0, 184, 184);background-color: rgb(255, 255, 245);border-radius: 10px;padding: 3px;">
+            <img class="card-img-top" src="./img5.jfif" alt=""
+                style="height: 250px;border: 5px solid rgb(255, 167, 167);">
+            <d iv class="card-body">
+                <h5 class="card-title">作品2</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button onclick="changeText(this)" style = "max-height: 400px;overflow:auto;" class="btn btn-secondary" data-toggle="collapse" data-target="#intro_2">Read more</button>
+                <div id="intro_2" class="collapse">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </div>
+        </div> <!-- card-body -->
+        <div class="card" style="max-height: 400px;overflow: auto; width: 18rem;border: 3px solid rgb(0, 184, 184);background-color: rgb(255, 255, 245);border-radius: 10px;padding: 3px;">
+            <img cla ss="card-img-top" src="./img6.jfif" alt=""
+                style="height: 250px;border: 5px solid rgb(255, 167, 167);width: 100%;">
+            <div class="card-body">
+                <h5 class="card-title">設計3</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button onclick="changeText(this)" style = "max-height: 400px;overflow:auto;" class="btn btn-secondary" data-toggle="collapse" data-target="#intro_3">Read more</button>
+                <div id="intro_3" class="collapse">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </div>
+            </div> <!-- card-body -->
+        </div>
+    </div> <!--card-->
+    </div> <!--contaienr-->
+
+
+    <footer class="d-flex flex-column justify-content-center align-items-center fixed-bottom pb-2">
+        <div class="d-flex  justify-content-center align-items-center" style="width: 100%;">
+            <img class="img" src="./facebook icon.png" style="border: 3px solid;border-radius: 50px;" alt="">
+            <img class="img" src="./google  icon.png" style="border: 3px solid;border-radius: 50px;" alt="">
+            <img class="img" src="./ig icon.jpg" style="border: 3px solid;border-radius: 100px;" alt="">
+        </div>
+        Copyright &copy; 2024 FIBEX All Rights Reserved
+    </footer>
+</body>
+<script>
+
+    function changeText(e){
+        console.log(e);
+        if(e.innerText == "Read more"){
+            e.innerText = "Read less";
+            }else{
+                e.innerText = "Read more"
+            }
+        }
+    
+    
+</script>
+</html>
